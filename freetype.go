@@ -153,6 +153,7 @@ func (f *Face) MaxVerticalAdvance() int {
 	return f.ypixels(int(f.handle.max_advance_height))
 }
 
+// Metrics represents measurements of a glyph in pixels.
 type Metrics struct {
 	Width, Height      int
 	HorizontalBearingX int
