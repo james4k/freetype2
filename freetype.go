@@ -119,7 +119,7 @@ func (f *Face) Pt(pt, dpi int) error {
 	return nil
 }
 
-// Pt sets character size in pixels.
+// Px sets character size in pixels.
 func (f *Face) Px(px int) error {
 	height := C.FT_UInt(px)
 	errno := C.FT_Set_Pixel_Sizes(f.handle, 0, height)
