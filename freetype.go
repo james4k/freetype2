@@ -19,8 +19,7 @@ Visit http://freetype.org for more on FreeType 2.
 package freetype2
 
 /*
-#cgo CFLAGS: -I/usr/local/include/freetype2
-#cgo LDFLAGS: -lfreetype
+#cgo pkg-config: freetype2
 #include <ft2build.h>
 #include FT_FREETYPE_H
 #include FT_GLYPH_H
